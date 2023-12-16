@@ -429,6 +429,10 @@ footer .content {
 }
 
 @media screen and (min-width: 360px) and (max-width: 667px) {
+  .nav-logo > a {
+    display: none;
+  }
+
   .main-elem h1 {
     font-size: 40px;
   }
@@ -456,5 +460,9 @@ footer .content {
     border-radius: 10px 10px 0 0;
     height: 200px;
     object-fit: cover;
+  }
+
+  .nav-content {
+    margin-right: 20px;
   }
 }
