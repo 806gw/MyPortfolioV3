@@ -459,7 +459,7 @@ footer .content {
     width: 300px;
     border-radius: 10px 10px 0 0;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .nav-content {
