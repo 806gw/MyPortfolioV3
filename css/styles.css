@@ -89,6 +89,18 @@ nav {
   color: #fefefe;
 }
 
+.nav-items > li > button > .nav-contact {
+  color: #fefefe;
+}
+
+.nav-items > li > button > .nav-contact:hover {
+  color: #2997ff;
+}
+
+.nav-items > li > button > a {
+  color: #fefefe;
+}
+
 /* Navbar #2 - Sticky Functioning (.airpods-navbar) */
 .sticky {
   position: fixed;
@@ -129,7 +141,7 @@ section {
 .canvas-elem {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -296,3 +308,4 @@ footer .content {
   justify-content: space-between;
   align-items: center;
 }
+
