@@ -184,6 +184,10 @@ section {
   text-decoration: underline;
 }
 
+.msg-elem.msg-elem-01 p, .msg-elem.msg-elem-02 p, .msg-elem.msg-elem-03 p, .msg-elem.msg-elem-04 p {
+  font-size: 60px;
+}
+
 /* Message Element Text Styling */
 .msg-elem h2 {
   font-size: 80px;
@@ -389,6 +393,23 @@ footer .content {
 }
 
 
+@media all and (max-width:767px)  { 
+  .main-elem h1 {
+    font-size: 70px;
+  }
+
+  .class-list {
+    display: inline;
+  }
+
+  .class-card {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+}
+
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) { 
   .class-card {
@@ -407,19 +428,33 @@ footer .content {
   }
 }
 
-@media all and (max-width:767px)  { 
+@media screen and (min-width: 360px) and (max-width: 667px) {
   .main-elem h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 
-  .class-list {
-    display: inline;
+  .msg-elem.msg-elem-01 p,
+  .msg-elem.msg-elem-02 p,
+  .msg-elem.msg-elem-03 p,
+  .msg-elem.msg-elem-04 p,
+  .msg-elem h2
+   {
+    font-size: 30px; /* Adjust the font size for smaller screens */
   }
 
   .class-card {
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 70px;
+    width: 300px;
+    box-shadow: 10px 10px 10px -5px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative; top: 0px; transition: top 0.2s;
+  }
+  .class-img {
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
   }
 }
