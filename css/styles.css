@@ -165,7 +165,7 @@ section {
 
 /* Main Element Text Styling */
 .main-elem h1 {
-  font-size: 150px;
+  font-size: 100px;
 }
 .main-elem span {
   font-style: italic;
@@ -186,14 +186,14 @@ section {
 
 /* Message Element Text Styling */
 .msg-elem h2 {
-  font-size: 96px;
+  font-size: 80px;
 }
 .msg-elem small {
   font-size: 18px;
   font-weight: 600;
 }
 .msg-elem p {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 68px;
 }
@@ -231,10 +231,16 @@ section {
   left: 14%;
   bottom: 40px;
 }
+
+.section-04-2 {
+  margin-top: 100px;
+}
+
 .section-04-2 .text {
   left: 23.5%;
   bottom: 42px;
 }
+
 .section-04-3 .text {
   left: 25%;
   top: 25%;
@@ -309,3 +315,111 @@ footer .content {
   align-items: center;
 }
 
+/* ------------ Project ------------ */
+
+.class-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+}
+
+.class-card {
+  width: 400px;
+  box-shadow: 10px 10px 10px -5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative; top: 0px; transition: top 0.2s;
+}
+
+.class-card:hover {
+  top: -4px;
+}
+
+.class-img {
+  width: 400px;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.class-container {
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-type {
+  font-weight: bold;
+}
+
+.class-desc {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class-title {
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.github {
+  width: 30px;
+  margin: auto;
+  display: block;
+  transition: .2s ease-in-out;
+}
+
+.github:hover {
+  cursor: pointer;
+  filter: invert(45%) sepia(7%) saturate(4777%) hue-rotate(194deg) brightness(89%) contrast(80%);
+}
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) { 
+  .class-card {
+    width: 360px;
+    box-shadow: 10px 10px 10px -5px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative; top: 0px; transition: top 0.2s;
+  }
+  .class-img {
+    width: 360px;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media all and (max-width:767px)  { 
+  .main-elem h1 {
+    font-size: 70px;
+  }
+
+  .class-list {
+    display: inline;
+  }
+
+  .class-card {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+}
